@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        header {
+          width: 100%;
+          height: 100px;
+          background: pink;
+        }
+        main {
+          width: 100%;
+          display: flex;
+          height: calc(100vh - 200px);
+          nav {
+            flex: 1;
+            background: #eee;
+          }
+          article {
+            flex: 6;
+            background: #ddd;
+          }
+          aside {
+            flex: 1;
+            background: #ccc;
+          }
+        }
+        footer {
+          width: 100%;
+          height: 100px;
+          background: #666;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <nav>Nav</nav>
+      <article>Article</article>
+      <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>
