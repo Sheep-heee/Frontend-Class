@@ -1,0 +1,46 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  margin-left: 80px;
+  margin-top: 80px;
+  .text_input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .img {
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
+    .input_area {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .input {
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input {
+          width: 140px;
+        }
+      }
+      .button {
+        button {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .result {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,50 @@
+.frame div {
+  border: 3px solid #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.frame {
+  div: nth-chile(1);
+  div-width: 50px;
+}
+
+.frame {
+  div: nth-chile(2);
+  div-width: 100px;
+}
+
+.frame {
+  div: nth-chile(3);
+  div-width: 150px;
+}
+
+.frame {
+  div: nth-chile(4);
+  div-width: 200px;
+}
+
+.frame {
+  div: nth-chile(5);
+  div-width: 250px;
+}
+
+.frame {
+  div: nth-chile(6);
+  div-width: 300px;
+}
+
+.frame {
+  div: nth-chile(7);
+  div-width: 350px;
+}
+
+.frame {
+  div: nth-chile(8);
+  div-width: 400px;
+}
+
+.frame {
+  div: nth-chile(9);
+  div-width: 450px;
+}

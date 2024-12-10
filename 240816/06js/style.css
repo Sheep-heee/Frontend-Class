@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1487088678257-3a541e6e3922?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+}
+body main {
+  width: 960px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+body main #tweetTextArea {
+  width: 100%;
+  height: 80%;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 24px;
+}
+body main #tweetTextArea:focus {
+  outline: none;
+}
+body main #tweetButton {
+  font-size: 22px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+body main #tweetButton:hover {
+  background: #000;
+  color: #fff;
+}

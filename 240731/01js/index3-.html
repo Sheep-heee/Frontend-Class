@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style3-.css" />
+    <script defer src="./script3.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="topMenu">
+        <div class="saleImg">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/016/327/494/small_2x/sale-badge-tag-3d-icon-render-illustration-png.png"
+            alt="saleimg"
+          />
+        </div>
+        <div class="formArea">
+          <form name="priceCalc" action="http://127.0.0.1:5500" method="get">
+            <ul>
+              <li>
+                <label for="price">원래가격</label>
+                <input type="text" name="price" id="price" />
+                원
+              </li>
+              <li>
+                <label for="sale">할인율</label>
+                <input type="text" name="sale" id="sale" />
+                %
+              </li>
+            </ul>
+            <input type="button" value="할인가격 계산하기" />
+          </form>
+        </div>
+      </section>
+      <section class="bottomInfo">
+        <p></p>
+      </section>
+    </main>
+  </body>
+</html>

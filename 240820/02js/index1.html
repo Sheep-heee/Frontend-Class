@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script1.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        background: url("./background.jpg") center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #container {
+        width: 900px;
+        height: 480px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        .idArea {
+          width: 700px;
+          height: 80px;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 10px;
+          label {
+            font-size: 20px;
+          }
+          input[type="text"] {
+            height: 20px;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        #result {
+          height: 300px;
+          text-align: center;
+          font-size: 25px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="idArea">
+        <label for="id">User ID</label>
+        <input type="text" name="id" id="id" />
+      </div>
+      <div id="result">와</div>
+    </div>
+  </body>
+</html>

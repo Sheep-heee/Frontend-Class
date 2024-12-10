@@ -1,0 +1,43 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.container .text_input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .text_input .img img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .text_input .input_area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .text_input .input_area .input {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .text_input .input_area .input input {
+  width: 140px;
+}
+.container .text_input .input_area .button button {
+  padding: 10px;
+}
+.container .result {
+  margin-top: 20px;
+}

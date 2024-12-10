@@ -14,6 +14,7 @@ let currentIdx = 0;
 // 복제한 5개의 li노드를 왼쪽으로 이동시키기 위한 함수1
 const updateWidth = () => {
   const currentSlides = document.querySelectorAll(".slides li");
+  console.log(currentSlides);
   const newSlideCount = currentSlides.length;
   const newWidth = `${
     (slideWidth + slideMargin) * newSlideCount - slideMargin
