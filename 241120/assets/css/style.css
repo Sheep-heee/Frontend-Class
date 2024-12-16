@@ -47,6 +47,11 @@ header ul .header__btn {
   padding: 5px 10px;
   border-radius: 5px;
 }
+header ul .header__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 
 footer {
   text-align: center;
@@ -85,11 +90,67 @@ footer {
   gap: 50px;
 }
 
+.auth-switch {
+  text-align: center;
+  margin-top: 40px;
+}
+.auth-switch a {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+input:not(input[type=range]) {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+}
+input:not(input[type=range])::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type=submit],
+.social__btn {
+  display: block;
+  padding: 12px 20px;
+  background: rgba(255, 19, 0, 0.9);
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social__login {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.social__login .social__btn--github {
+  background: #24883b;
+}
+
 .search__form {
   display: flex;
-  flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 .search__form input {
   margin-bottom: 5px;
@@ -99,11 +160,50 @@ footer {
   background: #000;
   color: #fff;
 }
-.search__form input[type=submit] {
-  background: rgba(0, 0, 0, 0.3);
+.search__form input[type=text] {
+  width: 100%;
+}
+.search__form button {
+  background: transparent;
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-55%);
+  border: none;
+  font-size: 18px;
+  color: #ff1300;
+}
+
+.profile__data {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.profile__data img {
+  margin-bottom: 10px;
+}
+.profile__data h3 {
+  font-size: 18px;
+}
+
+.edit-profile__form label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.edit-profile__password {
+  margin-top: 50px;
+  text-align: center;
+}
+.edit-profile__password a {
+  text-decoration: underline;
 }
 
 body {
