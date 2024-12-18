@@ -24,7 +24,7 @@ input[type="submit"],
 .social__btn {
   display: block;
   padding: 12px 20px;
-  background: rgba($color: $red, $alpha: 0.9);
+  background: rgba($color: $red, $alpha: 0.9) !important;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
